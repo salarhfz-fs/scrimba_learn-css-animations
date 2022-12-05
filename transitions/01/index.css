@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+.heading {
+    color: darkblue;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.heading:hover {
+    color: green;
+    font-size: 2rem ;
+}
