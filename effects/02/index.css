@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+    background: red;
+    border: 1px solid black;
+    animation: transform 2s infinite;
+}
+
+@keyframes transform {
+    100% {
+        transform: scale(0.5, 0.5) translateX(5rem) rotate(45deg);
+    }
+}
