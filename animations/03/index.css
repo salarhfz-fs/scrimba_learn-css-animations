@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+.image-wrapper {
+    width: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: background-fade 1.5s ease-out both;
+}
+
+@keyframes background-fade {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+        width: 100%;
+    }
+}
+
+.title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: Sen;
+    text-align: center;
+    animation: text-fade 1s ease-out 2s both;
+}
+
+@keyframes text-fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
